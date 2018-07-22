@@ -1,4 +1,4 @@
-﻿namespace NzbDrone.Common.Http
+namespace NzbDrone.Common.Http
 {
     public sealed class HttpAccept
     {
@@ -6,6 +6,7 @@
         public static readonly HttpAccept Json = new HttpAccept("application/json");
         public static readonly HttpAccept JsonCharset = new HttpAccept("application/json;charset=utf-8");
         public static readonly HttpAccept Html = new HttpAccept("text/html");
+        public static readonly HttpAccept Wilcards = new HttpAccept("*/*");
         
         public string Value { get; private set; }
 
